@@ -1,12 +1,12 @@
 # Waktu Solat App
 
-This app use free API from https://aladhan.com/prayer-times-api
+This app use free API from <a href = 'https://aladhan.com/prayer-times-api'>Al Adhan</a> 
 
 
 
 The API Get Request is from 
 
-**http://api.aladhan.com/v1/calendarByCity?city=${this.city}&country=${this.country}" **
+http://api.aladhan.com/v1/calendarByCity?city=${this.city}&country=${this.country}"
 
 
 
