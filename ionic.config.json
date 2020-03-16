@@ -1,6 +1,8 @@
 {
   "name": "WaktuSolat",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular",
   "id": "1aea8a74"
 }

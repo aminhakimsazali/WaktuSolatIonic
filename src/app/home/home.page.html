@@ -1,14 +1,39 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      Waktu Solat
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+  
+  <ion-item>
+    <ion-label>Country</ion-label>
+    <ion-input id="myInput" [(ngModel)]="country" placeholder="  country name" value="Vietnam"></ion-input>
+  </ion-item>
+
+   
+  <ion-item>
+    <ion-label>City</ion-label>
+    <ion-input [(ngModel)]="city" placeholder="  city name" value="Hanoi"></ion-input>
+  </ion-item>
+
+  <ion-item  *ngIf="showion" (click)="toggleResults()" detail>
+    <ion-label id ="result">
+      Button Item with Detail Arrow
+    </ion-label>
+  </ion-item>
+  
+  <script>
+    autocomplete(document.getElementById("myInput"), countries);
+  </script>
+
+<ion-button  id="button" (click)= "goNextPage(country, city)" [routerLink]="['/', 'waktu-solat' ,country, city]">Submit</ion-button>
+  
 </ion-content>
+
+<ion-footer>
+
+
+</ion-footer>
